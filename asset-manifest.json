@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/kumov-sajt/static/css/main.abcdec08.chunk.css",
+    "main.js": "/kumov-sajt/static/js/main.9c3465e7.chunk.js",
+    "main.js.map": "/kumov-sajt/static/js/main.9c3465e7.chunk.js.map",
+    "runtime-main.js": "/kumov-sajt/static/js/runtime-main.13784a23.js",
+    "runtime-main.js.map": "/kumov-sajt/static/js/runtime-main.13784a23.js.map",
+    "static/css/2.0642ef16.chunk.css": "/kumov-sajt/static/css/2.0642ef16.chunk.css",
+    "static/js/2.6151ee07.chunk.js": "/kumov-sajt/static/js/2.6151ee07.chunk.js",
+    "static/js/2.6151ee07.chunk.js.map": "/kumov-sajt/static/js/2.6151ee07.chunk.js.map",
+    "index.html": "/kumov-sajt/index.html",
+    "static/css/2.0642ef16.chunk.css.map": "/kumov-sajt/static/css/2.0642ef16.chunk.css.map",
+    "static/css/main.abcdec08.chunk.css.map": "/kumov-sajt/static/css/main.abcdec08.chunk.css.map",
+    "static/js/2.6151ee07.chunk.js.LICENSE.txt": "/kumov-sajt/static/js/2.6151ee07.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/kumov-sajt/static/media/trending.0d681025.svg",
+    "static/media/SocialBar.module.scss": "/kumov-sajt/static/media/twitter.f0e3d69b.svg",
+    "static/media/Hero.module.scss": "/kumov-sajt/static/media/hero.615ed173.svg",
+    "static/media/logo.04639a1c.svg": "/kumov-sajt/static/media/logo.04639a1c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.13784a23.js",
+    "static/css/2.0642ef16.chunk.css",
+    "static/js/2.6151ee07.chunk.js",
+    "static/css/main.abcdec08.chunk.css",
+    "static/js/main.9c3465e7.chunk.js"
+  ]
+}
