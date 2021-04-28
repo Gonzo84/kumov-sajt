@@ -1,0 +1,132 @@
+@import "../abstract/functions";
+@import "../abstract/mixins/quantity-queries";
+
+.young-adult,
+.romance,
+.mystery,
+.children,
+.history,
+.horror,
+.fantasy,
+.fiction,
+.classics,
+.scifi,
+.trending,
+.top-rated,
+.english,
+.french,
+.german,
+.italian,
+.spanish,
+.portuguese,
+.dutch,
+.russian,
+.chinese,
+.japanese,
+.greek,
+.latin {
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.young-adult {background-image: url("../../../Theme/resources/img/genres/pople.svg");}
+.romance {background-image: url("../../../Theme/resources/img/genres/romance.svg");}
+.mystery {background-image: url("../../../Theme/resources/img/genres/mystery.svg");}
+.children {background-image: url("../../../Theme/resources/img/genres/child.svg");}
+.history {background-image: url("../../../Theme/resources/img/genres/history.svg");}
+.horror {background-image: url("../../../Theme/resources/img/genres/horror.svg");}
+.fantasy {background-image: url("../../../Theme/resources/img/genres/fantasy.svg");}
+.fiction {background-image: url("../../../Theme/resources/img/genres/fiction.svg");}
+.classics {background-image: url("../../../Theme/resources/img/genres/classics.svg");}
+.scifi {background-image: url("../../../Theme/resources/img/genres/sciFi.svg");}
+.trending {background-image: url("../../../Theme/resources/img/genres/trending.svg");}
+.top-rated {background-image: url("../../../Theme/resources/img/genres/top-rated.svg"); background-size: 50%}
+.english {background-image: url("../../../Theme/resources/img/flags/gb.svg");}
+.french {background-image: url("../../../Theme/resources/img/flags/fr.svg");}
+.german {background-image: url("../../../Theme/resources/img/flags/de.svg");}
+.italian {background-image: url("../../../Theme/resources/img/flags/it.svg");}
+.spanish {background-image: url("../../../Theme/resources/img/flags/es.svg");}
+.portuguese {background-image: url("../../../Theme/resources/img/flags/pt.svg");}
+.dutch {background-image: url("../../../Theme/resources/img/flags/nl.svg");}
+.russian {background-image: url("../../../Theme/resources/img/flags/ru.svg");}
+.chinese {background-image: url("../../../Theme/resources/img/flags/cn.svg");}
+.japanese {background-image: url("../../../Theme/resources/img/flags/jp.svg");}
+.greek {background-image: url("../../../Theme/resources/img/flags/gr.svg");}
+.latin {background-image: url("../../../Theme/resources/img/flags/latin.svg");}
+
+.#{$prefix}section {
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: transition(all);
+
+    &.visible {
+        opacity: 1;
+    }
+}
+
+.#{$prefix}section-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 120rem;
+    width: 100%;
+}
+
+.#{$prefix}section-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    flex: 1;
+    margin-bottom: 3rem;
+
+    @media (max-width: 768px){
+        justify-content: center;
+
+        .#{$prefix}section-title {
+            flex: 1;
+        }
+    }
+
+    &.#{$prefix}header-centered {
+        justify-content: center;
+
+        .#{$prefix}section-title {
+            text-transform: uppercase;
+        }
+    }
+}
+
+.#{$prefix}card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.#{$prefix}cp {
+    background-color: #f8f6fe;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.#{$prefix}section-title {
+    margin: 0;
+    font-size: 3.2rem;
+    text-align: center;
+
+    @media (max-width: 450px) {
+        font-size: 2.6rem;
+    }
+}
+
+.#{$prefix}section-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}

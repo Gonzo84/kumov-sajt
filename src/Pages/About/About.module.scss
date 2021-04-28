@@ -1,0 +1,42 @@
+.About {
+    
+    h1 {
+        margin-bottom: 4rem;
+    }
+    
+    .WhoSection {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        
+        @media  (max-width: 576px) {
+            flex-direction: column;
+        }
+        
+        li {
+            text-align: center;
+            
+            &:first-of-type {
+                margin-right: 5rem;
+    
+                @media  (max-width: 576px) {
+                    margin-right: 0;
+                    margin-bottom: 5rem;
+                }
+            }
+        }
+        
+        img {
+            border-radius: 50%;
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+        
+        h4 {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+    }
+}

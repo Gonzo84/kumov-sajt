@@ -1,0 +1,24 @@
+.BooksPage {
+    flex-direction: column;
+}
+
+.Book {
+   display: inline-flex;
+}
+
+.RemoveLastOne {
+    &:last-of-type {
+        display: none;
+    }
+}
+
+.Row {
+    display: flex;
+    flex-direction: column;
+}
+
+.BooksWrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

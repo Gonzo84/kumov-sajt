@@ -1,0 +1,110 @@
+@import '../../Theme/sass/abstract/variables';
+@import '../../Theme/sass/abstract/functions';
+
+.Footer {
+    background-color: #f8f6fe;
+    
+    @media (min-width: 650px) {
+        min-height: 40rem;
+    }
+
+    .#{$prefix}section-wrapper {
+        justify-content: flex-start;
+    }
+
+    ul {
+        flex-direction: column;
+        height: auto;
+        margin-right: 0;
+        width: 100%;
+    
+        li {
+            @media (max-width: 650px) {
+                text-align: center;
+            }
+        }
+    }
+
+    .Wrapper {
+        display: flex;
+        max-width: 120rem;
+        width: 100%;
+        
+        @media (max-width: 650px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .FooterGroup {
+        width: 33.333%;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        
+        @media (max-width: 650px) {
+            margin-bottom: 5rem;
+            align-items: center;
+            width: 100%
+        }
+
+        a {
+            height: auto;
+        }
+
+        .heading {
+            width: 100%;
+            text-align: center;
+            
+            @media (min-width: 650px) {
+                text-align: right;
+                padding-right: 1rem;
+            }
+        }
+        
+        &.FooterLogo {
+            a {
+                margin-left: 0 !important;
+            }
+        }
+    }
+    
+    
+
+    .Button {
+        background-color: transparent;
+        border: 0;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        color: #777;
+        text-decoration: none;
+        box-sizing: border-box;
+        font-family: "open-sans-semibold", "Helvetica Neue", sans-serif;
+        font-size: 1.6rem;
+        height: auto;
+        padding: 1rem;
+        position: relative;
+        width: auto;
+        outline: none;
+        cursor: pointer;
+
+        &::after {
+            content: "";
+            bottom: -.4rem;
+            height: 0.4rem;
+            position: absolute;
+            background: #777;
+            width: calc(100% - 2rem);
+            left: 1rem;
+            transform: scaleX(0);
+            transition: transition(transform);
+        }
+
+        &:hover {
+            &::after {
+                transform: scaleX(1);
+            }
+        }
+    }
+}
